@@ -29,7 +29,7 @@ const EventLogistics = (props: Props) => {
   return (
     <section className={classes.logistics}>
         <div className={classes.image}>
-            <Image src={`/${props.image}`} alt={props.imageAlt} />
+            <Image src={`/${props.image}`} alt={props.imageAlt} width='160' height='160'/>
         </div>
         <ul className={classes.list}>
             <LogisticsItem icon={BsCalendarDate}>
