@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './event-item.module.css'
 import Button from '../ui/button'
+import Image from 'next/image'
 
 import { BsCalendarDate } from 'react-icons/bs'
 import { FaLocationPin } from 'react-icons/fa6'
@@ -27,7 +28,7 @@ const EventItem = (props: Props) => {
     const exploreLink = `/events/${props.id}`
   return (
     <li className={classes.item}>
-        <img src={`/${props.image}`} alt={props.title} />
+        <Image src={`/${props.image}`} alt={props.title} />
         <div className={classes.content}>
             <div>
                 <h2>{props.title}</h2>

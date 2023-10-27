@@ -7,6 +7,7 @@ import { BsFillArrowRightCircleFill } from 'react-icons/bs'
 import classes from './event-logistics.module.css'
 
 import React from 'react'
+import Image from 'next/image'
 
 type Props = {
     date: string,
@@ -28,7 +29,7 @@ const EventLogistics = (props: Props) => {
   return (
     <section className={classes.logistics}>
         <div className={classes.image}>
-            <img src={`/${props.image}`} alt={props.imageAlt} />
+            <Image src={`/${props.image}`} alt={props.imageAlt} />
         </div>
         <ul className={classes.list}>
             <LogisticsItem icon={BsCalendarDate}>

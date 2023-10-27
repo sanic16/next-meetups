@@ -25,9 +25,9 @@ const EventList = (props: Props) => {
                 image={event.image}
                 location={event.location}
                 title={event.title}
-            >
+            />
 
-            </EventItem>
+            
         ))}
     </ul>
   )
